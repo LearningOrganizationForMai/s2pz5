@@ -28,7 +28,7 @@ class PostgreSQL:
 pg = PostgreSQL()
 print('Данные из employees:')
 try:
-    data = pg.query('SELECT * FROM employees LIMIT 5')
+    data = pg.query('SELECT * FROM employees')
     for row in data:
         print(f'  {row}')
 except Exception as e:
@@ -36,7 +36,7 @@ except Exception as e:
 
 print('Данные из positions:')
 try:
-    data = pg.query('SELECT * FROM positions LIMIT 5')
+    data = pg.query('SELECT * FROM positions')
     for row in data:
         print(f'{row}')
 except Exception as e:
@@ -44,7 +44,7 @@ except Exception as e:
 
 print('Данные из suppliers:')
 try:
-    data = pg.query('SELECT * FROM suppliers LIMIT 5')
+    data = pg.query('SELECT * FROM suppliers')
     for row in data:
         print(f'{row}')
 except Exception as e:
